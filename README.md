@@ -20,6 +20,11 @@ Unlike pixel-based bounding boxes, YOLO uses values between 0 and 1, meaning:
 	x_center = 0.5 means the box is centered in the middle of the image.
 	width = 1.0 would mean the box spans the entire image width.
 
+Here is a sample YOLO text file:
+![YOLOformat](https://github.com/sprouse9/URI_CapstoneProject/blob/main/images/yoloformat.jpg)
+
+
+
 
 Here is a sample frame:
 
