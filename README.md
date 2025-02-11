@@ -5,7 +5,12 @@
 
 The Car Detection data set is a sequence of still captures (frames) of cars driving through a section of road.
 Every frame is stored in a JPG and has a correspoding TXT file with the coordinates of the “bounding box”
-for each car detected in frame. Each line represents a car with the coordinates seprated by a space:
+for each car detected in frame. 
+
+![Car Detection](https://github.com/sprouse9/URI_CapstoneProject/blob/main/images/folderstructure.jpg)
+
+
+Each line represents a car with the coordinates seprated by a space:
 
 	<class_id> <x_center> <y_center> <width> <height>
 
