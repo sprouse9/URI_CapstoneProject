@@ -9,8 +9,7 @@ for each car detected in frame.
 
 ![Car Detection](https://github.com/sprouse9/URI_CapstoneProject/blob/main/images/folderstructure.jpg)
 
-
-Each line represents a car with the coordinates seprated by a space:
+Each line represents a car with the coordinates separated by a space:
 
 	<class_id> <x_center> <y_center> <width> <height>
 
@@ -22,3 +21,6 @@ Unlike pixel-based bounding boxes, YOLO uses values between 0 and 1, meaning:
 	width = 1.0 would mean the box spans the entire image width.
 
 
+Here is a sample frame:
+
+![Carframe](https://github.com/sprouse9/URI_CapstoneProject/blob/main/images/exampleframe.jpg)
