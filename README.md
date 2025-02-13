@@ -68,11 +68,30 @@ Below is an example of a single frame (frame_0001.jpg) from the dataset:
 1. Pre-trained Model Selection
 This project leverages YOLOv5/YOLOv8 as a base model, which has been pre-trained on the COCO dataset. Fine-tuning will be performed on the car detection dataset to improve accuracy.
 
-2. Steps to Train the Model
-✅ Dataset Preprocessing: Splitting data into training (80%) and testing (20%)
-✅ Fine-tuning YOLO: Using transfer learning to adapt the model to car detection
-✅ Training & Validation: Evaluating performance using IoU, Precision, Recall, and mAP
-✅ (Optional) Object Tracking Integration using DeepSORT/SORT
+YOLO includes various levels of pre-trained models.  
+**YOLOv8s** is the small version of YOLOv8, a lightweight model designed for speed and efficiency while maintaining decent accuracy.  
+It is pre-trained on the COCO dataset and can be used for object detection, segmentation, and classification tasks.  
+The "s" in yolov8s stands for small, indicating that it's optimized for performance on edge devices or situations where computational resources are limited.  
+YOLOv8 comes in multiple sizes, balancing accuracy and speed. The variations are:  
+
+| Model | Parameters | FLOPs (B) | Speed (ms) | Use Case |
+| --- | --- | --- | --- | --- |
+| **YOLOv8n** (nano) | ~3.2M | 8.7 | Fastest | Best for real-time applications on low-power devices |
+| **YOLOv8s** (small) | ~11.2M | 28.6 | Fast | Good balance of speed and accuracy |
+| **YOLOv8m** (medium) | ~25.9M | 78.9 | Moderate | More accurate but slower |
+| **YOLOv8l** (large) | ~43.7M | 165.2 | Slower | Higher accuracy for more complex tasks |
+| **YOLOv8x** (extra-large) | ~68.2M | 257.8 | Slowest | Best for high-accuracy tasks on powerful GPUs |
+
+
+
+
+
+
+2. Steps to Train the Model   
+✅ Dataset Preprocessing: Splitting data into training (80%) and testing (20%)   
+✅ Fine-tuning YOLO: Using transfer learning to adapt the model to car detection   
+✅ Training & Validation: Evaluating performance using IoU, Precision, Recall, and mAP   
+✅ (Optional) Object Tracking Integration using DeepSORT/SORT   
 
 ## Evaluation Metrics
 The effectiveness of the model will be measured using the following metrics:
