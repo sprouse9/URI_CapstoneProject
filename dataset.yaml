@@ -1,4 +1,4 @@
-path: /Users/randy/DSP577/URI_CapstoneProject/archive  # Root directory of your dataset
+path: /content/URI_CapstoneProject/archive  # Root directory of your dataset
 train: train/images  # Training images folder (relative to 'path')
 val: val/images  # Validation images folder (relative to 'path')
 
