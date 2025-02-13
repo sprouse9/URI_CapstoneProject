@@ -1,4 +1,4 @@
-path: /content/URI_CapstoneProject/archive  # Root directory of your dataset
+path: /content/drive/MyDrive/archive  # Root directory of your dataset
 train: train/images  # Training images folder (relative to 'path')
 val: val/images  # Validation images folder (relative to 'path')
 
