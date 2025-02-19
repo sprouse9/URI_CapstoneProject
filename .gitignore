@@ -5,3 +5,4 @@ runs/
 datasets/
 dataset_updated.yaml
 *.zip
+*.pt
