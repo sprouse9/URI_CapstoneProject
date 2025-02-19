@@ -106,12 +106,20 @@ The effectiveness of the model will be measured using the following metrics:
 (📌 This section will be updated with final results, sample detections, and accuracy metrics after training is completed.)
 
 ## Installation & Usage
-To run this project locally:
-
-1. Clone the Repository
+To run this project locally clone the repository:
 ```
 git clone https://github.com/sprouse9/URI_CapstoneProject.git
 cd URI_CapstoneProject
 ```
+This analysis is computationally intensive, so the code first checks for GPU availability and whether CUDA and cuDNN are installed. Even if a system has a powerful GPU, PyTorch won’t utilize it unless these libraries are properly set up.
+
+Since CUDA and cuDNN must be installed outside the Jupyter notebook, the script adjusts data processing based on your system’s capabilities to prevent long runtimes. If a GPU with sufficient VRAM is detected, the grid search will be more aggressive.
+
+I’ve tested this code on multiple machines and found that checking for GPU and CUDA is the best approach. 
+Feel free to modify this behavior as needed.
+
+The dataset will be automatically downloaded as a zip file from Google Drive and extracted locally. If either the zip file or the extracted folder is already present, the download will be skipped.
+
+Most required libraries, including Ultralytics and PyTorch, will be installed automatically if not found.
 
 
